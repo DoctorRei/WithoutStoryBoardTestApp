@@ -55,6 +55,11 @@ class LoginViewController: UIViewController {
     
     @objc func goToSVC() {
         let seccondVC = seccondVC()
+        
+        seccondVC.complition = { [weak self] text in
+            self?.helloLabel.text = text
+        }
+        
         seccondVC.configure(text: loginTextField.text ?? "")
         seccondVC.modalPresentationStyle = .fullScreen
         present(seccondVC, animated: true)

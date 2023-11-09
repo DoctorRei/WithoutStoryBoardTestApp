@@ -14,6 +14,8 @@ class seccondVC: UIViewController {
     private let backButton = UIButton(configuration: .filled())
     private let opinionTextField = UITextField()
     
+    var complition: ((String) -> ())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,23 +32,25 @@ class seccondVC: UIViewController {
             greetingsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
             greetingsLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             
-            backButton.topAnchor.constraint(equalTo: greetingsLabel.topAnchor, constant: 200),
+            backButton.topAnchor.constraint(equalTo: opinionTextField.topAnchor, constant: 200),
             backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150),
             backButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -150),
             
-            opinionTextField.topAnchor.constraint(equalTo: backButton.topAnchor, constant: 200),
-            opinionTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150),
-            opinionTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -150)
+            opinionTextField.topAnchor.constraint(equalTo: greetingsLabel.topAnchor, constant: 50),
+            opinionTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
+            opinionTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100)
         ])
         
         greetingsLabel.textAlignment = .center
         
+        opinionTextField.placeholder = "Welcome"
         opinionTextField.textAlignment = .center
         
         backButton.setTitle("Back", for: .normal)
         backButton.addTarget(self, action: #selector(backToVC), for: .touchUpInside)
+        backButton.tintColor = .red
         
-        view.backgroundColor = .systemPink
+        view.backgroundColor = .green
         
     }
     
@@ -55,6 +59,7 @@ class seccondVC: UIViewController {
     }
     
     @objc func backToVC() {
+        complition?(opinionTextField.text ?? "")
         dismiss(animated: true)
     }
     

@@ -12,6 +12,7 @@
 		E99E4B472AFD0BD60067E315 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99E4B462AFD0BD60067E315 /* LoginViewController.swift */; };
 		E99E4B4C2AFD0BD80067E315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99E4B4B2AFD0BD80067E315 /* Assets.xcassets */; };
 		E99E4B4F2AFD0BD80067E315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99E4B4D2AFD0BD80067E315 /* LaunchScreen.storyboard */; };
+		E99E4B572AFD291E0067E315 /* SeccondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99E4B562AFD291E0067E315 /* SeccondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E99E4B4B2AFD0BD80067E315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99E4B4E2AFD0BD80067E315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99E4B502AFD0BD80067E315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99E4B562AFD291E0067E315 /* SeccondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				E99E4B422AFD0BD60067E315 /* AppDelegate.swift */,
 				E99E4B442AFD0BD60067E315 /* SceneDelegate.swift */,
 				E99E4B462AFD0BD60067E315 /* LoginViewController.swift */,
+				E99E4B562AFD291E0067E315 /* SeccondVC.swift */,
 				E99E4B4B2AFD0BD80067E315 /* Assets.xcassets */,
 				E99E4B4D2AFD0BD80067E315 /* LaunchScreen.storyboard */,
 				E99E4B502AFD0BD80067E315 /* Info.plist */,
@@ -136,6 +139,7 @@
 			files = (
 				E99E4B472AFD0BD60067E315 /* LoginViewController.swift in Sources */,
 				E99E4B432AFD0BD60067E315 /* AppDelegate.swift in Sources */,
+				E99E4B572AFD291E0067E315 /* SeccondVC.swift in Sources */,
 				E99E4B452AFD0BD60067E315 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
